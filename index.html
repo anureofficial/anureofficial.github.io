@@ -31,7 +31,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-color:black;
-  min-height: 80%;
+ min-height:100%;
 }
 
 .bgimg-2 {
@@ -156,13 +156,19 @@ body, html {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
 
-
+<span class="w3-hide-small">
 <video autoplay muted loop id="myVideo">
   <source src="mclaren video.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+</span>
 
-
+<span class="w3-hide-large">
+<video autoplay muted loop id="myVideo">
+  <source src="mclaren video_phone.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</span>
 
   <div class="w3-display-bottomleft w3-text-white" style="padding:30px 30px">
     <span class="w3-jumbo w3-hide-small">Join the Metaverse</span>
