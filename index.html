@@ -14,12 +14,12 @@
 
 
 
-
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
 
 body, html {
+
   font-weight: 500;
 
   height: 100%;
@@ -30,14 +30,14 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("imag2.jpg");
-  min-height: 100%;
+  background-color:black;
+  min-height: 50%;
 }
 
 .bgimg-2 {
   background-position: center;
   background-size: cover;
-  background-image: url("citadel2.jpg");
+  background-image: url("citadel3.jpg");
   min-height: 100%;
 }
 
@@ -129,7 +129,10 @@ body, html {
 }
 
 
-
+#myVideo {
+ width:100%;
+ 
+}
 
 </style>
 <body>
@@ -152,6 +155,15 @@ body, html {
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+
+<video autoplay muted loop id="myVideo">
+  <source src="mclaren video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
   <div class="w3-display-bottomleft w3-text-white" style="padding:30px 30px">
     <span class="w3-jumbo w3-hide-small">Join the Metaverse</span>
 	    <span class="w3-xxlarge w3-hide-large w3-hide-medium" >Join the Metaverse</span><br>
@@ -162,7 +174,7 @@ body, html {
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:200px 50px" id="about">
+<div class="w3-container" style="padding:100px 50px" id="about">
   <h3 class="w3-center">ABOUT ANURE</h3>
   
   <div class="w3-row-padding w3-center" style="margin-top:40px">
@@ -282,7 +294,7 @@ body, html {
 
   <!-- countdown -->
 	
-	<div style="text-align:center;font-size:25px;padding:10px" ID="countdown">Release date: 17 dec 2023</div>
+	<div style="text-align:center;font-size:25px;padding:10px" ID="countdown">Release date: 17 dec 2022</div>
 	<div style="text-align:center;font-size:25px;padding:10px" ID="countdown">Countdown:</div>
 
 <div id="demo" style="text-align:center;font-size:25px;padding-bottom:50px;"></div>
@@ -305,7 +317,7 @@ body, html {
 
  <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 17, 2023 00:00:00").getTime();
+var countDownDate = new Date("Dec 17, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
