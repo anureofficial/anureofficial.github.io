@@ -17,7 +17,11 @@
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-
+hr {
+color:white;
+margin-left:40%;
+margin-right:40%;
+}
 
 body, html {
 
@@ -29,17 +33,17 @@ body, html {
 
 /* Full height image header */
 .bgimg-1 {
-  background-position: center;
+   background-position: center;
   background-size: cover;
-  background-color:black;
-
+  background-image: url("bg5.jpg");
+  min-height: 100%;
 }
 
 .bgimg-2 {
   background-position: center;
   background-size: cover;
-    background-color:black;
-
+    background-color:white;
+min-height:100%;
 }
 
 .w3-bar .w3-button {
@@ -145,30 +149,47 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <!--<a href="#home" class="w3-bar-item w3-button w3-wide">ANURE</a> -->
-	<img class="w3-image w3-center w3-round-large" src="logo3w.gif" alt="anur3" width="100" height="100">
-    
-	<div class="w3-right">
-      <a href="https://opensea.io/collection/anur3" class="w3-bar-item w3-button"><img src="opensealogo.png" alt="OPENSEA" width="100" height=""></a>
-  
-     
+    <img class="w3-image w3-center w3-round-large" src="logo3w.gif" alt="anur3" width="100" height="100">
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <!--<a href="#team" class="w3-bar-item w3-button"> TEAM</a>-->
+      <a href="#work" class="w3-bar-item w3-button"> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
     </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card  w3-hide-medium w3-hide-large" style="display:none; width:100%" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button  w3-large w3-padding-16 " style="margin-left:91%;">&times;</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">ABOUT</a>
+  <!--<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">TEAM</a>-->
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">CONTACT</a>
+</nav>
+
+
 
 
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-<span class="w3-hide-small">
-<img src="wallpaper.jpg" width="100%">
-</span>
 
-<span class="w3-hide-large">
-<img src="wallpaper1.jpg" width="100%">
-
-</span>
-
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+  
+    <span class="w3-jumbo w3-hide-small">STAND OUT FROM THE CROWD</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">STAND OUT FROM THE CROWD</span><br>
+    <span class="w3-xlarge">UNLOCK your FULL potential with the help of DIGITAL MARKETING</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">LEARN MORE</a></p>
+  </div> 
   
 </header>
 
@@ -176,16 +197,84 @@ body, html {
 
 <!-- ANUR3 -->
 <div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-<header class="bgimg-2 w3-display-container w3-grayscale-min" id="citadel">
-  <div class="w3-center w3-black  w3-text-white" style="padding-bottom:200px;padding-top:200px;padding-right:30px;padding-left:30px;">
+<header class="bgimg-2 w3-display-container w3-grayscale-min" id="about">
+  <div class="w3-center w3-white  w3-text-black" style="padding-bottom:500px;padding-top:400px;padding-right:30px;padding-left:30px;">
     <span class="w3-jumbo w3-hide-small " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">ANUR3</span>
 	    <span class="w3-xxlarge w3-hide-large w3-hide-medium " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">ANUR3</span><br>
 
-	<span class="w3-xlarge " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">ANUR3 is an NFT based world, where you can easily buy and sell anything: land, avatars, cars, and many others.<br>
-	The ANUR3 metaverse include a map made up of 1.369 lands.<br>
-	Land owners can host contests and events, customize assets, monetize assets, and more!<br>
-	Trade the collection and keep your eyes peeled for future drops.
+	<span class="w3-xlarge " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">We are ANUR3 - a modern digital marketing agency from Bucharest.<br>
+	We will help you unlock your full potential with our services such as<br> creating modern websites,
+	SEO, PPC, creating a brand, getting seen<br> and heard by your potential customers, and much more.<br>
 </span>
+    
+  </div> 
+  
+</header>
+
+
+<!-- what we offer -->
+<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
+<header class="bgimg-2 w3-display-container w3-grayscale-min" id="work">
+  <div class="w3-center w3-black  w3-text-white" style="padding-bottom:300px;padding-top:100px;padding-right:30px;padding-left:30px;">
+     <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-white	  w3-padding-16">What We Offer</span>
+    </div>
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3 >PERFORMANCE</h3>
+	  <hr>
+      <p>Gaining trust is just one step. We have a constant concern to discover new technologies, so as to help our customers to be more competitive, and to us, more valuable.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>FLEXIBILITY</h3>
+	  <hr>
+      <p>In such a dynamic industry as software, we manage to adapt our services and especially the prices according to the client's needs. We manage to find optimal and efficient solutions for any problem.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>INNOVATION</h3>
+	  <hr>
+      <p>We are part of a dynamic industry, where we are obliged to keep up with technology and its trends. In order to offer the best services, we must be one step ahead of the others. We innovate through continuous learning.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>SIMPLICITY</h3>
+	  <hr>
+      <p>We make software products that focus on human interaction, and our products become simple and intuitive to use.</p>
+    </div>
+
+  </div>
+  
+       <!-- Grid -->
+  <div class="w3-row w3-container w3-padding-20" >
+    
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>DESIGN</h3>
+	  <hr>
+      <p>We know that exceptional website experiences are a blend of the right message and the right technology. That's why our interactive design approach focuses on usability, accessibility impact, and achieving results.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>BRANDING</h3>
+	  <hr>
+      <p>A brand is what you believe in. What you stand for. Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>CONSULTATION</h3>
+	  <hr>
+      <p>In order to build a memorable brand experience, our process starts with research. This critical component to our work uncovers opportunities that shape how audiences interact with your organization.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>PROMISES</h3>
+	  <hr>
+      <p>Design extends far beyond the screen and page. Everything is designed, from the way you navigate a space to the way you interact with your customers. A compelling brand considers all aspects of experience, and we’ve got the tools necessary to help you think through the details.</p>
+    </div>
+
+  </div>
     
   </div> 
   
@@ -194,183 +283,65 @@ body, html {
 
 
 
-<!-- Assets -->
-<div class="w3-container" style="padding:128px 50px" id="assets">
-  <h3 class="w3-center"  data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">ASSETS</h3>
-  
-  <div class="w3-row-padding w3-center" style="margin-top:40px">
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo w3-center">	<img class="w3-image w3-round-large" src="land1.gif" alt="land1" width="200" height="200"></i>
-      <p class="w3-large">Sector #1 Land #1</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608478262091055105"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
+<!-- Prices-->
+  <div class="w3-row-padding" id="pricing" style="margin-left:20%;margin-right:20%;margin-top:200px;margin-bottom:200px;">
+    <div class="w3-center w3-padding-64">
+      <h2>PRICING PLANS</h2>
+      <p>Choose a pricing plan that fits your needs.</p>
     </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="land2.gif" alt="LOGO" width="200" height="200"></i>
-      <p class="w3-large">Sector #1 Land #2</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608479361602682881"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Modern Website & Logo</li>
+        <li class="w3-padding-16"><s>Branding & Strategy</s></li>
+        <li class="w3-padding-16"><s>Content Marketing & Social Media</s></li>
+        <li class="w3-padding-16">Endless Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 150</h2>
+          <span class="w3-opacity">one time payment</span>
+        </li>
+        
+      </ul>
     </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="land3.gif" alt="LOGO" width="200" height="200"></i>
-      <p class="w3-large">Sector #1 Land #3</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608481560625938433"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+        
+        <li class="w3-padding-16">Modern Website & Logo</li>
+        <li class="w3-padding-16">Branding & Strategy</li>
+        <li class="w3-padding-16"><s>Content Marketing & Social Media</s></li>
+        <li class="w3-padding-16">Endless Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 200</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        
+      </ul>
     </div>
-    
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16">Modern Website & Logo</li>
+        <li class="w3-padding-16">Branding & Strategy</li>
+        <li class="w3-padding-16">Content Marketing & Social Media</li>
+        <li class="w3-padding-16">Endless Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 350</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        
+      </ul>
+    </div>
   </div>
-  <div class="w3-row-padding w3-center" style="margin-top:0px">
-    
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="land35.gif" alt="LOGO" width="200" height="200"></i>
-      <p class="w3-large">Sector #37 Land #35</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608483759649193985"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="land36.gif" alt="LOGO" width="200" height="200"></i>
-      <p class="w3-large">Sector #37 Land #36</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608482660137566209"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="land37.gif" alt="LOGO" width="200" height="200"></i>
-      <p class="w3-large">Sector #37 Land #37</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608480461114310657"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-  </div>
-  <div class="w3-row-padding w3-center" style="margin-top:0px">
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo w3-center">	<img class="w3-image w3-round-large" src="car11.gif" alt="land1" width="300" height="200"></i>
-      <p class="w3-large">Ferrari Xezri</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608525541091049482"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="car31.gif" alt="LOGO" width="300" height="200"></i>
-      <p class="w3-large">Lamborghini Terzo Millennio</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608524441579421706"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="car21.gif" alt="LOGO" width="300" height="200"></i>
-      <p class="w3-large">Mach Five</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608526640602677253"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    
-  </div>
-   <div class="w3-row-padding w3-center" style="margin-top:0px">
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo w3-center">	<img class="w3-image w3-round-large" src="moto21.gif" alt="land1" width="300" height="200"></i>
-      <p class="w3-large">Futuristic Motorcycle #1</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608528839625932810"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="moto31.gif" alt="LOGO" width="300" height="200"></i>
-      <p class="w3-large">Harley Davidson #1</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608529939137560586"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="moto11.gif" alt="LOGO" width="300" height="200"></i>
-      <p class="w3-large">Damon Hypersport</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608527740114305034"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    
-  </div>
-  <div class="w3-row-padding w3-center" style="margin-top:0px">
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo w3-center">	<img class="w3-image w3-round-large" src="card11.gif" alt="land1" width="300" height="200"></i>
-      <p class="w3-large">ANUR3 Bronze Card</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608531038649198352"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="card21.gif" alt="LOGO" width="300" height="200"></i>
-      <p class="w3-large">ANUR3 Silver Card</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608532138160816228"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    <div class="w3-third" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	<img class="w3-image w3-round-large" src="card31.gif" alt="LOGO" width="300" height="200"></i>
-      <p class="w3-large">ANUR3 Gold Card</p>
-      <p><a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/103401538517270522223033525416141259959370877636677886391561608533237672443914"><button class="button1" style="vertical-align:middle"><span>BUY</span></button></a></p><br><br>
-    </div>
-    
-  </div>
-  <div class="w3-center"  data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000"><a href="https://opensea.io/collection/anur3"><button class="button" ><span>See More</span></button></a></div>
-<br><br><br>
-
-
-</div>
 
 
 
 
 
 
-
-
-<!-- the citadel -->
-<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-<header class="bgimg-2 w3-display-container w3-grayscale-min" id="citadel">
-  <div class="w3-center w3-black  w3-text-white" style="padding-bottom:200px;padding-top:200px;padding-right:30px;padding-left:30px;">
-    <span class="w3-jumbo w3-hide-small " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">The Citadel</span>
-	    <span class="w3-xxlarge w3-hide-large w3-hide-medium " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">The Citadel</span><br>
-
-	<span class="w3-xlarge " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">The center of this world is The Citadel, a place where you can find everything you need.
-<br>Divided into 37 sectors, with a total of 1.369 pieces of land<br> that can be bought or sold trough NFTs.
-</span>
-    
-  </div> 
-  
-</header>
-
-
-
-
-
-
-
-<!-- free to play -->
-<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-<header class="bgimg-2 w3-display-container w3-grayscale-min" id="play">
-  <div class="w3-center w3-white  w3-text-black" style="padding-bottom:200px;padding-top:200px;padding-right:30px;padding-left:30px;">
-    <span class="w3-jumbo w3-hide-small " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">FREE TO PLAY</span>
-	    <span class="w3-xxlarge w3-hide-large w3-hide-medium " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">FREE TO PLAY</span><br>
-
-	<span class="w3-xlarge " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">Create a free account and join the Metaverse.<br> We want everyone to be able to join and use the platform.
-</span>
-    
-  </div> 
-  
-</header><div>
-	
-	<!-- creator account -->
-<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-<header class="bgimg-2 w3-display-container w3-grayscale-min" id="creator">
-  <div class="w3-center w3-black  w3-text-white" style="padding-bottom:200px;padding-top:200px;padding-right:30px;padding-left:30px;">
-    <span class="w3-jumbo w3-hide-small " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">Creator Account</span>
-	    <span class="w3-xxlarge w3-hide-large w3-hide-medium " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000" >Creator Account</span><br>
-
-	<span class="w3-xlarge " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">This is one of the many ways you can make money using this platform.<br>Own a piece of land and become a creator.<br> Make money with your art.
-    
-  </div> 
-  
-</header><div>
-  
-
-
-
-
-
-
-	
-  
-
-
-<!-- heleon353 -->
-<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-<header class="bgimg-2 w3-display-container w3-grayscale-min" id="heleon353">
-  <div class="w3-center w3-white  w3-text-black" style="padding-bottom:200px;padding-top:200px;padding-right:30px;padding-left:30px;">
-    <span class="w3-jumbo w3-hide-small " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">HELEON 353</span>
-	    <span class="w3-xxlarge w3-hide-large w3-hide-medium " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">HELEON353</span><br>
-
-	<span class="w3-xlarge " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">Venture to HELEON 353, a planet of carnage.<br> A place where you make money by killing other players.<br> Fight solo or team up to earn more.<br> Watch out the scoreboard, that's where the big bucks are made.
-    
-  </div> 
-  
-</header><div>
 
 
 
@@ -382,66 +353,53 @@ body, html {
   
   
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64"  data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
+<footer class=" w3-black w3-padding-64"  data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
 
 
-<!-- roadmap -->
 
-<div class="w3-container" style="padding:128px 50px" id="about">
-  <h3 class="w3-center" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">ROADMAP</h3>
-  
-  <div class="w3-row-padding w3-center" style="margin-top:40px">
-    <div class="w3-quarter" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo w3-center">	</i>
-      <p class="w3-large">PHASE 1 Q1 2022</p>
-      <p class="w3-large">-Launching website/ Instagram/ Tweeter/ Discord/ Youtube<br>
-	-Sectors #36 & #37 public sale: floor price 0.001 eth<br>
-	-Giveaways<br>
-	-Brainstorming & developing ANUR3 v1.0 </p>
-	  
-	  <br><br>
-    </div>
-    <div class="w3-quarter" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	</i>
-      <p class="w3-large">PHASE 2 Q2 2022</p>
-      <p class="w3-large">-Launching ANUR3 v1.0<br>
-	-Sectors #30-#35 public sale: floor price 0.01 eth<br>
-	-Contests inside the platform (prizes in NFTs & crypto)
-	  
-	  </p><br><br>
-    </div>
-    <div class="w3-quarter" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	</i>
-      <p class="w3-large">PHASE 3 Q3 2022</p>
-      <p class="w3-large">
-	  -Sectors #20-#29 public sale: floor price 0.1 eth<br>
-	-Bigger contests & prizes<br>
-	-Brainstorming & developing ANUR3 v2.0 (a more immersive world)<br>
-	-Creating more investing and job opportunities in the metaverse
 
-	  </p><br><br>
-    </div>
-    <div class="w3-quarter" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <i class=" w3-margin-bottom w3-jumbo">	</i>
-      <p class="w3-large">PHASE 4 Q4 2022 </p>
-      <p class="w3-large">Coming Soon</p><br><br>
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact" style="margin-top:100px;">
+  <div class="w3-row" style="padding-left:300px; padding-right:300px;">
+    <div class="w3-col m5 w3-left ">
+    
+	<h2 class="w3-text-light-grey">Contact Us</h2>
+    
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bucharest, Romania</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +40753753405</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: anur3contact@gmail.com</p>
+    </div><br>
+    
+	
+	
+	
+	</div>
+    <div class="w3-col m7">
+	<p>Let's get in touch. Send me a message:</p>
+<form action="https://formsubmit.co/anur3contact@gmail.com" method="POST">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
     </div>
   </div>
 </div>
 
+  <!-- End Contact Section -->
 
-
-  <!-- countdown -->
-	
-	<div style="text-align:center;font-size:25px;padding:10px" ID="countdown" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">Release date: 17 jun 2022</div>
-	<div style="text-align:center;font-size:25px;padding:10px" ID="countdown" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">Countdown:</div>
-
-<div id="demo" style="text-align:center;font-size:25px;padding-bottom:50px;" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000"></div>
+ 
 
 
 
-
-  <div class="w3-xlarge w3-section" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
+  <div class="w3-xlarge w3-section w3-center" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
     <a href="https://www.instagram.com/mirk_nft/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
      <a href=""><i class="fa fa-youtube w3-hover-opacity"></i></a>
      <a href="https://twitter.com/Mirk_nft"><i class="fa fa-twitter w3-hover-opacity"></i></a>
