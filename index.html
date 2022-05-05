@@ -31,11 +31,26 @@ margin-right:-10px;
   line-height: 1.8;
 }
 
+
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+
 /* Full height image header */
 .bgimg-1 {
    background-position: center;
   background-size: cover;
-  background-image: url("anur31.gif");
+  /*background: url("anur3.gif");*/
   min-height: 100%;
 }
 
@@ -183,6 +198,12 @@ min-height:100%;
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+  <video playsinline autoplay muted loop poster="cake.jpg">
+    <source src="anur3.mp4" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
 <!--
   <div class="w3-display-left w3-text-white" style="padding:48px; ">
   
