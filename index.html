@@ -181,8 +181,8 @@ min-height:100%;
 <div id="loader">
 
 
-<span class="w3-hide-small" ><img src="logo_w.png" style="width: 40%;margin-top:10%;"></span><br>
-<span class="w3-hide-small"><img src="loading.gif" style="width:5%;margin-top:-150px;"></span>
+<span class="w3-hide-small" ><img src="logo_w.png" style="width: 30%;margin-top:12%;"></span><br>
+<span class="w3-hide-small"><img src="loading.gif" style="width:5%;margin-top:-120px;"></span>
 
 
 <span class="w3-hide-large w3-hide-medium"><img src="logo_w.png" style="width: 60%;margin-top:50%; "></span><br>
@@ -601,10 +601,13 @@ function w3_close() {
 
 
 <script>
+		
+		
 	var loader = document.getElementById("loader");
 	window.addEventListener("load", function(){
-	loader.fadeout="slow"
+	setTimeout(function(){
 	loader.style.display="none"
+},5000); 
 	})
 </script>
 
