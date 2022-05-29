@@ -13,7 +13,19 @@
 
 <style>
 
-
+#loader{
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  text-align:center;
+background-color:black;
+}
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -50,8 +62,12 @@ video {
 .bgimg-1 {
    background-position: center;
   background-size: cover;
-  /*background: url("anur3.gif");*/
+  background-color:black;
+
+  background-image: url("work.png");
   min-height: 100%;
+  text-align:center;
+ 
 }
 
 .bgimg-2 {
@@ -161,8 +177,23 @@ min-height:100%;
 </style>
 <body>
 
+
+<div id="loader">
+
+
+<span class="w3-hide-small" ><img src="logo_w.png" style="width: 40%;margin-top:10%;"></span><br>
+<span class="w3-hide-small"><img src="loading.gif" style="width:5%;margin-top:-150px;"></span>
+
+
+<span class="w3-hide-large w3-hide-medium"><img src="logo_w.png" style="width: 60%;margin-top:50%; "></span><br>
+<span class="w3-hide-large w3-hide-medium"><img src="loading.gif" style="width:10%;margin-top:-90px;"></span>
+
+</div>
+
+
+
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top" style="z-index:99;">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <img class="w3-image w3-center w3-round-large" src="logo3w.gif" alt="anur3" width="100" height="100">
     <!-- Right-sided navbar links -->
@@ -170,7 +201,7 @@ min-height:100%;
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <!--<a href="#team" class="w3-bar-item w3-button"> TEAM</a>-->
       <a href="#work" class="w3-bar-item w3-button"> SERVICES</a>
-      <a href="#pricing" class="w3-bar-item w3-button"> PRICING</a>
+      <a href="#pricing" class="w3-bar-item w3-button"> PORTOFOLIO</a>
       <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -182,14 +213,18 @@ min-height:100%;
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-xlarge  w3-sidebar w3-bar-block w3-white w3-card  w3-hide-medium w3-hide-large" style="display:none; width:100%; " id="mySidebar">
+<nav class="w3-xlarge  w3-sidebar w3-bar-block w3-black w3-card  w3-hide-medium w3-hide-large" style="display:none; width:100%;z-index:110; " id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button  w3-xlarge w3-padding-16 w3-right" style="">&times;</a>
 
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center;">ABOUT</a>
   <!--<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">TEAM</a>-->
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">SERVICES</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">PRICING</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">PORTOFOLIO</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center">CONTACT</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center"><img src="icon1.gif" style="width:30px;"></a>
+   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center"><img src="icon2.gif" style="width:30px;"></a>
+   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style="text-align:center"><img src="icon3.gif" style="width:30px;"></a>
+  
 </nav>
 
 
@@ -197,51 +232,48 @@ min-height:100%;
 
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="z-index:2;">
 
-  <video playsinline autoplay muted loop poster="cake.jpg">
+ <!-- <video playsinline autoplay muted loop poster="cake.jpg">
     <source src="anur3.mp4" type="video/webm">
     Your browser does not support the video tag.
-  </video>
+  </video>-->
 
-<!--
-  <div class="w3-display-left w3-text-white" style="padding:48px; ">
+
+ <div class="w3-display-middle w3-text-white" style="padding:48px;">
   
-    <span class="w3-jumbo w3-hide-small">STAND OUT FROM THE CROWD</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">STAND OUT FROM THE CROWD</span><br>
-    <span class="w3-xlarge">UNLOCK your FULL potential with ANUR3</span><br>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="border-radius: 10px;">LEARN MORE</a></p>
-  </div> -->
-  
+    <span class="w3-jumbo w3-hide-small"><img src="log1.png" style="width:100%;"></span><br>
+    <span class=" w3-hide-large w3-hide-medium"><img src="log1.png" style="width:400px;"></span><br>
+
+</div>
+
 </header>
 
 
 
 <!-- ANUR3 -->
-<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-<header class="bgimg-2 w3-display-container w3-grayscale-min" id="about">
-  <div class="w3-center w3-white  w3-text-black" style="padding-bottom:500px;padding-top:400px;padding-right:30px;padding-left:30px;">
-    <span class="w3-jumbo w3-hide-small " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">ANUR3</span>
-	    <span class="w3-xxlarge w3-hide-large w3-hide-medium " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">ANUR3</span><br>
 
-	<span class="w3-xlarge " data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">We are ANUR3 - a modern digital marketing agency from Bucharest.<br>
-	We will help you unlock your full potential with our services such as<br> creating modern websites,
-	SEO, PPC, creating a brand, getting seen<br> and heard by your potential customers, and much more.<br>
-</span>
-    
-  </div> 
+<header class="bgimg-2 w3-display-container w3-grayscale-min" id="about">
+  <div class="w3-center w3-white  w3-text-black" style="padding-bottom:250px;padding-top:200px;padding-right:50px;padding-left:50px;">
+    <span class="w3-jumbo w3-hide-small " ><img src="logo_b.png" style="width:300px;"></span>
+	    <span class="w3-xxlarge w3-hide-large w3-hide-medium " ><img src="logo_b.png" style="width:300px;"></span><br>
+
+	<span class="w3-xlarge " >More than a marketing agency.
+	We will help you unlock your full<br> potential with our services such as creating modern websites,<br>
+	SEO, PPC, creating a brand, getting seen and heard <br>by your potential customers, and much more.<br>
+	</span>
+     </div> 
   
 </header>
 
 
 <!-- what we offer -->
-<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
 <header class="bgimg-2 w3-display-container w3-grayscale-min" id="work">
-  <div class="w3-center w3-black  w3-text-white" style="padding-bottom:300px;padding-top:100px;padding-right:30px;padding-left:30px;">
+  <div class="w3-center w3-black  w3-text-white" style="padding-bottom:100px;padding-top:100px;padding-right:30px;padding-left:30px;">
      <!-- Grid -->
-  <div class="w3-row w3-container" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000" >
+  <div class="w3-row w3-container"  >
     <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-white	  w3-padding-16" >What We Offer</span>
+      <span class="w3-xlarge w3-bottombar w3-border-white	  w3-padding-16" >What We Offer</span><br>
     </div>
     <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
       <h3 >PERFORMANCE</h3>
@@ -270,7 +302,7 @@ min-height:100%;
   </div>
   
        <!-- Grid -->
-  <div class="w3-row w3-container w3-padding-20"  data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
+  <div class="w3-row w3-container w3-padding-20"  >
     
     <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
       <h3>DESIGN</h3>
@@ -305,60 +337,71 @@ min-height:100%;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Prices-->
-  <div class="w3-row-padding" id="pricing" style="margin-left:10%;margin-right:10%;padding-top:200px;margin-bottom:200px;" >
-    <div class="w3-center w3-padding-24" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <h2>PRICING PLANS</h2>
-      <p>Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" id="pricing" style="margin-left:10%;margin-right:10%;padding-top:200px;margin-bottom:0px;" >
+    <div class="w3-center w3-padding-24" >
+      <h2>PORTOFOLIO</h2>
+      <p>We create unique visuals and strategies to achieve the best results in the digital world.</p>
+	  <br>
     </div>
 
-    <div class="w3-third w3-margin-bottom" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="border-radius: 25px;">
-        <li class="w3-black w3-xlarge w3-padding-32" style="border-radius: 25px 25px 0px 0px;">Basic</li>
-        <li class="w3-padding-16">Modern Website & Logo</li>
-        <li class="w3-padding-16"><s>Branding & Strategy</s></li>
-        <li class="w3-padding-16"><s>Content Marketing & Social Media</s></li>
-        <li class="w3-padding-16">Endless Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 300 - $1600</h2>
-          <span class="w3-opacity">one time payment</span>
-        </li>
-        
-      </ul>
+    <div class="w3-third w3-margin-bottom" >
+<img src="5.png" style="width:100%; border-radius:25px;">
     </div>
 
-    <div class="w3-third w3-margin-bottom" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="border-radius: 25px;">
-        <li class="w3-black w3-xlarge w3-padding-32" style="border-radius: 25px 25px 0px 0px;">Pro</li>
-        
-        <li class="w3-padding-16">Modern Website & Logo</li>
-        <li class="w3-padding-16">Branding & Strategy</li>
-        <li class="w3-padding-16"><s>Content Marketing & Social Media</s></li>
-        <li class="w3-padding-16">Endless Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 400</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        
-      </ul>
+    <div class="w3-third w3-margin-bottom" >
+<img src="6.png" style="width:100%; border-radius:25px;">
     </div>
 
-    <div class="w3-third w3-margin-bottom"data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="border-radius: 25px;">
-        <li class="w3-black w3-xlarge w3-padding-32" style="border-radius: 25px 25px 0px 0px;">Premium</li>
-        <li class="w3-padding-16">Modern Website & Logo</li>
-        <li class="w3-padding-16">Branding & Strategy</li>
-        <li class="w3-padding-16">Content Marketing & Social Media</li>
-        <li class="w3-padding-16">Endless Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 600</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        
-      </ul>
+    <div class="w3-third w3-margin-bottom" >
+<img src="4.png" style="width:100%; border-radius:25px;">
     </div>
-  </div>
 
+	<br>
+	<div class="w3-third w3-margin-bottom" >
+<img src="2.jpg" style="width:100%; border-radius:25px;">
+    </div>
+	<div class="w3-third w3-margin-bottom" >
+<img src="1.png" style="width:100%; border-radius:25px;">
+    </div>
+	<div class="w3-third w3-margin-bottom">
+<img src="3.png" style="width:100%; border-radius:25px;">
+    </div>
+	
+</div>
+<div class="w3-row-padding" id="pricing" style="margin-left:10%;margin-right:10%;padding-top:0px;margin-bottom:200px;" >
+    
+
+    <div class="w3-third w3-margin-bottom" >
+<img src="7.png" style="width:100%; border-radius:25px;">
+    </div>
+
+    <div class="w3-third w3-margin-bottom" >
+<img src="8.png" style="width:100%; border-radius:25px;">
+    </div>
+
+    <div class="w3-third w3-margin-bottom" >
+<img src="9.png" style="width:100%; border-radius:25px;">
+    </div>
+
+	
+	
+</div>
 
 
 
@@ -375,7 +418,7 @@ min-height:100%;
   
   
 <!-- Footer -->
-<footer class=" w3-black w3-padding-64" id="contact"  data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
+<footer class=" w3-black w3-padding-64" id="contact" >
 
 
 
@@ -458,6 +501,7 @@ min-height:100%;
         </ul>
       </div>
     <!-- End Grid/Pricing tables -->
+	
   </div>
 	
 	
@@ -477,6 +521,11 @@ min-height:100%;
 -->
 
 </footer>
+
+
+
+
+
 
 
  <script>
@@ -545,6 +594,28 @@ function w3_close() {
   <script>
     AOS.init();
   </script>
+
+
+
+
+
+
+<script>
+	var loader = document.getElementById("loader");
+	window.addEventListener("load", function(){
+	loader.fadeout="slow"
+	loader.style.display="none"
+	})
+</script>
+
+
+
+
+
+
+
+
+
 
 
 
