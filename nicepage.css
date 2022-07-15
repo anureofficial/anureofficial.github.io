@@ -4,9 +4,6 @@
  * Copyright 2014-2021 Froala Labs
  */
 
-
-
-
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -36688,16 +36685,6 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 
- /*begin-variables custom-site-css*//* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
