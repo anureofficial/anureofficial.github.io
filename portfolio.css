@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/0a36e70efc0751a0e6342a0c12ce284871532f4d5f7740c2cb67086e46bc05366382a35e7c56c078f689f68f745e4ac99d0222ae7bc0f2213e2474_1280.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("0a36e70efc0751a0e6342a0c12ce284871532f4d5f7740c2cb67086e46bc05366382a35e7c56c078f689f68f745e4ac99d0222ae7bc0f2213e2474_1280.jpg");
 }
 
 .u-section-1 .u-sheet-1 {
@@ -45,7 +45,7 @@
 
 .u-section-2 .u-image-1 {
   min-height: 495px;
-  background-image: url("images/4.png");
+  background-image: url("4.png");
   background-position: 50% 50%;
 }
 
@@ -55,7 +55,7 @@
 
 .u-section-2 .u-image-2 {
   min-height: 245px;
-  background-image: url("images/12.png");
+  background-image: url("12.png");
   background-position: 50% 50%;
 }
 
@@ -66,7 +66,7 @@
 .u-section-2 .u-image-3 {
   min-height: 245px;
   --effect-scale: 0.75;
-  background-image: url("images/3.png");
+  background-image: url("3.png");
   background-position: 50% 50%;
 }
 
@@ -76,7 +76,7 @@
 
 .u-section-2 .u-image-4 {
   min-height: 495px;
-  background-image: url("images/11-28.png");
+  background-image: url("11-28.png");
   background-position: 50% 50%;
 }
 
@@ -228,7 +228,7 @@
 
 .u-section-3 .u-image-1 {
   min-height: 498px;
-  background-image: url("images/10-29.png");
+  background-image: url("10-29.png");
   background-position: 50% 50%;
 }
 
@@ -238,7 +238,7 @@
 
 .u-section-3 .u-image-2 {
   min-height: 248px;
-  background-image: url("images/2.jpg?rand=edf6");
+  background-image: url("2.jpg?rand=edf6");
   background-position: 50% 50%;
 }
 
@@ -249,7 +249,7 @@
 .u-section-3 .u-image-3 {
   min-height: 248px;
   --effect-scale: 0.75;
-  background-image: url("images/1.png");
+  background-image: url("1.png");
   background-position: 50% 50%;
 }
 
@@ -259,7 +259,7 @@
 
 .u-section-3 .u-image-4 {
   min-height: 498px;
-  background-image: url("images/taglinehere.png");
+  background-image: url("taglinehere.png");
   background-position: 50% 50%;
 }
 
@@ -407,7 +407,7 @@
 
 .u-section-4 .u-image-1 {
   min-height: 498px;
-  background-image: url("images/9-32.png");
+  background-image: url("9-32.png");
   background-position: 50% 50%;
 }
 
@@ -417,7 +417,7 @@
 
 .u-section-4 .u-image-2 {
   min-height: 249px;
-  background-image: url("images/DinoWorld1.png");
+  background-image: url("DinoWorld1.png");
   background-position: 50% 50%;
 }
 
@@ -428,7 +428,7 @@
 .u-section-4 .u-image-3 {
   min-height: 249px;
   --effect-scale: 0.75;
-  background-image: url("images/CARS4YOU.png");
+  background-image: url("CARS4YOU.png");
   background-position: 50% 50%;
 }
 
@@ -438,7 +438,7 @@
 
 .u-section-4 .u-image-4 {
   min-height: 498px;
-  background-image: url("images/playlist1.png");
+  background-image: url("playlist1.png");
   background-position: 50% 50%;
 }
 
@@ -597,7 +597,7 @@
   width: 162px;
   height: 162px;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  background-image: url("images/graffiti-logo-template-for-a-clothing-brand-featuring-paint-dripping-3875j.png");
+  background-image: url("graffiti-logo-template-for-a-clothing-brand-featuring-paint-dripping-3875j.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -610,7 +610,7 @@
   width: 162px;
   height: 162px;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  background-image: url("images/icon1.png");
+  background-image: url("icon1.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -623,7 +623,7 @@
   width: 162px;
   height: 162px;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  background-image: url("images/275281736_102699309038472_8420711972639197886_n-removebg-preview.png");
+  background-image: url("275281736_102699309038472_8420711972639197886_n-removebg-preview.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -636,7 +636,7 @@
   width: 162px;
   height: 162px;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  background-image: url("images/pd.png");
+  background-image: url("pd.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
